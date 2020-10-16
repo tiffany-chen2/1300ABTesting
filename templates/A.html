@@ -49,6 +49,7 @@
 
     <!-- TODO: Feel free to modify anything inside main.css -->
     <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="../static/A.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -69,30 +70,32 @@
 
     <!-- If you add any new buttons, you need to update the javascript file, for
     corresponding button id, so that clicks of that button could be logged -->
-    <div class="content-pane">
+    <div class="flex-container">
       <div class="vendor-wrapper" id="mp1">
-        <img src="../static/coppercombo.png" class="vendor-photo" />
+        <img src="../static/coppercombo.png" class="image-prov" />
         <button class="vendor-book-button btn btn-primary" type="submit" id="mp1">
           Add To Cart
         </button>
         <span><span id="mp1-added">0</span> in cart</span>
         <p>Stunning succulent combo, featuring 3 adolescent cacti in
-          industrial copper pots. <i>$9.99</i>
+          industrial <br> copper pots. <i>$9.99</i>
         </p>
       </div>
 
       <div class="vendor-wrapper" id="mp2">
-        <img src="../static/geoprickly.jpg" class="vendor-photo" />
+        <img src="../static/geoprickly.jpg" class="image-prov" />
         <button class="vendor-book-button btn btn-primary" type="submit" id="mp2">
           Add To Cart
         </button>
         <span><span id="mp2-added">0</span> in cart</span>
-        <p>Beautiful prickly pair in modern geometric pots. <i>$14.99</i>
+        <p>Beautiful prickly pair in modern geometric pots with triangles. <i>$14.99</i>
         </p>
       </div>
+    </div>
 
+    <div class="flex-container">
       <div class="vendor-wrapper" id="mp3">
-        <img src="../static/garden.jpg" class="vendor-photo" />
+        <img src="../static/garden.jpg" class="image-prov" />
         <button class="vendor-book-button btn btn-primary" type="submit" id="mp3">
           Add To Cart
         </button>
@@ -102,15 +105,17 @@
       </div>
 
       <div class="vendor-wrapper" id="mp4">
-        <img src="../static/garden-combo.jpg" class="vendor-photo" />
+        <img src="../static/garden-combo.jpg" class="image-prov" />
         <button class="vendor-book-button btn btn-primary" type="submit" id="mp4">
           Add To Cart
         </button>
         <span><span id="mp4-added">0</span> in cart</span>
-        <p>Cacti, succulent, and garden combo in handcrafted pots. <i>$34.99</i>
+        <p>Cacti, succulent, and garden combo in round handcrafted pots. <i>$34.99</i>
         </p>
       </div>
+    </div>
 
+    <div class="flex-container">
       <div id="cart-wrapper">
         <a onclick='navigateToCheckout()'>
         <span id="cart" class="fa-stack fa-2x has-badge" data-count="0">
